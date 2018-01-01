@@ -1,0 +1,279 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+			name: "mainPanel"
+			"maximumSize": new java.awt.Dimension( 410, 230 )
+			"preferredSize": new java.awt.Dimension( 410, 230 )
+			"minimumSize": new java.awt.Dimension( 410, 230 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "hidemode 3"
+				"$columnConstraints": "[85,fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+				"$rowConstraints": "[][][][][][2][][][][][][][][]"
+			} ) {
+				name: "showUserPanel"
+				"minimumSize": new java.awt.Dimension( 410, 204 )
+				"maximumSize": new java.awt.Dimension( 410, 204 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "idLabel"
+					"text": "Id."
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "pad 0 10 0 0,cell 0 0"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "idText"
+					"editable": false
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 0 7 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "imageLabel"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 9 0 3 6,wmax 100,hmax 100"
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator1"
+					"maximumSize": new java.awt.Dimension( 240, 1 )
+					"minimumSize": new java.awt.Dimension( 240, 1 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 1 8 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameLabel"
+					"text": "Name"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "pad 0 10 0 0,cell 0 2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nameText"
+					"editable": false
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 2 7 1"
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator2"
+					"maximumSize": new java.awt.Dimension( 240, 1 )
+					"minimumSize": new java.awt.Dimension( 240, 1 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 3 8 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "surnameLabel"
+					"text": "Surname"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "pad 0 10 0 0,cell 0 4"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "surnameText"
+					"editable": false
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 4 7 1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backButton"
+					"text": "Back"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 7"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "nextButton"
+					"text": "Next"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "nextButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 7 3 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "processLabel"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 8 8 2"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "countLabel"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 8 8 2"
+				} )
+			}, new FormLayoutConstraints( null ) {
+				"title": "Show"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "hidemode 3"
+				"$columnConstraints": "[85,fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+				"$rowConstraints": "[][][][][][][][][]"
+			} ) {
+				name: "addUserPanel"
+				"maximumSize": new java.awt.Dimension( 410, 230 )
+				"minimumSize": new java.awt.Dimension( 410, 230 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "idLabel2"
+					"text": "Id."
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "pad 0 10 0 0,cell 0 0 2 1"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "idText2"
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "idText2ActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "idText2KeyTyped", true ) )
+					addEvent( new FormEvent( "java.awt.event.InputMethodListener", "inputMethodTextChanged", "idText2InputMethodTextChanged", true ) )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 0 17 1"
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator3"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 1 22 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameLabel2"
+					"text": "Name"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "pad 0 10 0 0,cell 0 2 2 1"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nameText2"
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 2 17 1"
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator4"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 3 22 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "surnameLabel2"
+					"text": "Surname"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "pad 0 10 0 0,cell 0 4 2 1"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "surnameText2"
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 4 17 1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addButton"
+					"text": "Add"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 20 4 2 1"
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator5"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 5 22 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "pictureLabel"
+					"text": "Picture"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "pad 0 10 0 0,cell 0 6 12 2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "filenameText"
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 6 17 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "processLabel2"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 7 22 2"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "searchButton"
+					"text": "Search"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchButtonActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 20 6 2 1"
+				} )
+			}, new FormLayoutConstraints( null ) {
+				"title": "Add"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "hidemode 3"
+				"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+				"$rowConstraints": "[][][][][][]"
+			} ) {
+				name: "deletePanel"
+				"maximumSize": new java.awt.Dimension( 410, 230 )
+				"minimumSize": new java.awt.Dimension( 410, 230 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "idDeleteLabel"
+					"text": "Id."
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 1 2 1"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "idBox"
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "idBoxActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "idBoxItemStateChanged", true ) )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 1 18 1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "delButton"
+					"text": "Delete"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 20 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameDelText"
+					"text": "Name"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 2"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nameFieldDel"
+					"editable": false
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 2 18 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "surnameDelText"
+					"text": "Surname"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 3"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "surnameFieldText"
+					"editable": false
+					"maximumSize": new java.awt.Dimension( 140, 26 )
+					"minimumSize": new java.awt.Dimension( 140, 26 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 3 18 1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "processLabel3"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 5 23 1"
+				} )
+			}, new FormLayoutConstraints( null ) {
+				"title": "Delete"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 236 )
+			"size": new java.awt.Dimension( 320, 195 )
+		} )
+	}
+}
