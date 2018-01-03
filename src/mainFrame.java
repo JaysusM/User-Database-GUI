@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.event.*;
 import java.io.File;
 import java.util.ArrayList;
 import javax.swing.*;
@@ -12,10 +11,9 @@ public class mainFrame extends JFrame {
     private int userPosition;
     private ArrayList<user> users;
     private dbReader db;
-    private Comparator<user> comparator = new descendingUserComparator();
+    private static final Comparator<user> comparator = new descendingUserComparator();
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    // Generated using JFormDesigner Evaluation license - Joan Carpetier
     private JTabbedPane mainPanel;
     private JPanel showUserPanel;
     private JLabel idLabel;
@@ -152,11 +150,8 @@ public class mainFrame extends JFrame {
 
     private void searchButtonActionPerformed(ActionEvent e) {
         JFileChooser fc = new JFileChooser();
-        int opValue = fc.showOpenDialog(fc);
-        File file = fc.getSelectedFile();
-        if (opValue == fc.APPROVE_OPTION) {
-            filenameText.setText(file.getPath());
-        }
+        int opValue = fc.showOpenDialog(mainPanel);
+        if (opValue == fc.APPROVE_OPTION) filenameText.setText(fc.getSelectedFile().getPath());
     }
 
     private void addButtonActionPerformed(ActionEvent e) {
@@ -204,7 +199,6 @@ public class mainFrame extends JFrame {
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-        // Generated using JFormDesigner Evaluation license - Joan Carpetier
         mainPanel = new JTabbedPane();
         showUserPanel = new JPanel();
         idLabel = new JLabel();
