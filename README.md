@@ -7,7 +7,10 @@ Download the full repository and import it into your java IDE or
 download the [Jar](https://github.com/JaysusM/User-Database-GUI/raw/master/employeeReader.jar) and
 <br/>+ Windows: Execute it with java
 <br/>+ Linux/MacOS: Open a terminal, access the file directory and write `java -jar employeeReader.jar`
-**Check you have 'db' and 'output' folders where executable .jar is and 'db/' contains the 'simpleDatabase.db' file, otherwise it won't be able to load the database script.**
+<br/>
+<br />**Check you have 'db' and 'output' folders where executable .jar is and 'db/' contains the 'simpleDatabase.db' file, otherwise it won't be able to load the database script.**
+
+<hr>
 
 * Shows all users in DB
 
